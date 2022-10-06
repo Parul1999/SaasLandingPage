@@ -1,0 +1,129 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+body,
+p,
+ul {
+  margin: 0;
+
+}
+
+/* Navbar */
+header {
+  padding: 2%;
+  background-color: #7030CC;
+  color: #ffffff;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 40%;
+}
+
+.nav-item {
+  cursor: pointer;
+  color: #ffffff
+}
+
+.nav-item:hover {
+  color: #1bbcef;
+  text-decoration: underline;
+  text-decoration-color: #AD56D8;
+  text-underline-offset: 8px;
+}
+
+
+#trial-btn{
+  border: transparent;
+  padding: 1%;
+  color: #ffffff;
+  background-color: #1bbcef;
+  cursor: pointer;
+}
+
+/* End of Navbar */
+
+.header-section{
+  display: flex;
+}
+.header-heading{
+  font-size: 3.5em;
+}
+.hero-img{
+  width: 50%;
+}
+.user-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.saas-points>p{
+  width: 60%;
+}
+.saas-img{
+  width: 40%;
+}
+#saas-point-one{
+  list-style-image: url(./images/arrow-orange.svg);
+}
+#saas-point-two{
+  list-style-image: url(./images/arrow-green.svg);
+}
+#saas-point-three{
+  list-style-image: url(./images/arrow-blue.svg);
+}
+.features-container{
+  text-align: center;
+  margin: 2% 0;
+}
+.features-section{
+  display: flex;
+  justify-content: space-around;
+}
+.features{
+  width: 15%;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  border-radius: 10px;
+}
+.features-heading{
+  margin: 3%;
+}
+.feature-img{
+    padding: 10%;
+    border-radius: 50%;
+    display: inline-block;
+}
+#feature-img-one{
+background-color: #FAEAEB;;
+}
+#feature-img-two{
+  background-color: #fbf0ee;
+}
+#feature-img-three{
+  background-color: #e9f4f6;
+}
+#feature-img-four{
+  background-color: #f2e7f5;
+}
+.feature-desc.active{
+  background-color: #6429B7;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-top: 5%;
+}
+.feature-desc{
+  padding: 2.5%;
+}
