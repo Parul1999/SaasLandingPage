@@ -29,7 +29,8 @@ nav {
   display: flex;
   gap: 2rem;
   align-items: center;
-  width: 40%;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .nav-item {
@@ -69,6 +70,12 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.user-section-desc{
+  display: flex;
+  flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .saas-points>p{
   width: 60%;
@@ -92,6 +99,7 @@ nav {
 .features-section{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .features{
   width: 15%;
@@ -126,4 +134,52 @@ background-color: #FAEAEB;;
 }
 .feature-desc{
   padding: 2.5%;
+}
+
+@media only screen and (max-width: 1036px) {
+  .header-section{
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .saas-img{
+    width: 100%;
+  }
+  .hero-img{
+    width: 60%;
+  }
+}
+  @media only screen and (max-width: 708px) {
+  .navbar{
+    flex-flow: column;
+    align-items: center;
+  }
+  nav{
+    justify-content: center;
+  }
+  .features-section{
+    gap: 1rem;
+  }
+  .features{
+    width: 10rem;
+  }
+
+}
+
+@media only screen and (max-width:670px) {
+  .user-section{
+    flex-flow: column;
+  }
+  .saas-points>p{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:553px) {
+.hero-img{
+  width: 80%;
+}
+nav{
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
 }
