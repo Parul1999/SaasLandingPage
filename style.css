@@ -73,7 +73,6 @@ nav {
 .user-section-desc{
   display: flex;
   flex-flow: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -170,6 +169,9 @@ background-color: #FAEAEB;;
   .user-section{
     flex-flow: column;
   }
+.user-section-desc{
+    align-items: center;
+}
   .saas-points>p{
     width: 100%;
   }
